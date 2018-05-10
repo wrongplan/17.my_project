@@ -1,0 +1,62 @@
+.test{background: rgba(0, 0, 0, 0.5);}
+body{
+	background: gray;
+}
+.headerBG{
+	background: url(../img/jagody.jpg);
+	background-size: cover;
+	min-height: 100vh;
+}
+
+.navbar{
+	padding: 1rem 1rem;
+}
+.header-nav-collapse__mobile{
+	// position: absolute;
+top: 100%;
+// right: 1rem;
+z-index: 1;
+background: gray;
+width: 40%;
+background: rgba(248, 249, 250, 0.3);
+border-radius: 5px;
+text-align: center;
+color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	//kolor fontu w menu
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    &:hover{
+    	color: white;
+    	font-weight: bolder;
+    }
+    }
+
+.custom-toggler.navbar-toggler {
+    // kolor buttona w menu
+	border-color: #ffffff;
+	color: white;
+}
+// https://www.codeply.com/go/4FdZGlPMNV/bootstrap-4-custom-navbar-toggler-icon-color
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+@media (min-width: 768px) { 
+	.header-nav-collapse__mobile{
+		background: none;
+	}
+}
+
+// Extra small (xs) devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+// Small (sm) devices (landscape phones, 576px and up)
+// @media (min-width: 576px) { ... }
+// Medium (md) devices (tablets, 768px and up)
+// @media (min-width: 768px) { ... }
+// Large (lg) devices (desktops, 992px and up)
+// @media (min-width: 992px) { ... }
+// Extra (xl) large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { ... }
